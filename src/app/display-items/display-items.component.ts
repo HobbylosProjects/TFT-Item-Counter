@@ -98,4 +98,8 @@ export class DisplayItemsComponent implements OnInit {
     this.itemList.splice(firstItem, 1);
     this.buildTable();
   }
+  resetItemList() {
+    this.itemList = [];
+    this.buildTable();
+  }
 }
