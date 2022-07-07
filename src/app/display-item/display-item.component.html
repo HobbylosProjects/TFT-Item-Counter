@@ -1,0 +1,28 @@
+<div class="itemContainer">
+  <div class="itemDiv">
+    <div style="display: flex; justify-content: center; margin-bottom: 10px">
+      <img id="itemIcon" src="{{ item.path }}" />
+    </div>
+    <div>
+      <button
+        mat-mini-fab
+        color="warn"
+        (click)="decreaseCounter()"
+        style="display: inline"
+        class="counterButton"
+      >
+        -
+      </button>
+      <p style="display: inline; margin: 0 6px 0 6px">{{ inputvalue }}</p>
+      <button
+        mat-mini-fab
+        color="primary"
+        (click)="increaseCounter()"
+        style="display: inline"
+        class="counterButton"
+      >
+        +
+      </button>
+    </div>
+  </div>
+</div>

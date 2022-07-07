@@ -1,0 +1,18 @@
+.itemDiv {
+  transform: scale(0.7);
+}
+.itemContainer {
+  display: inline-flex;
+  border: 1px solid black;
+  border-radius: 3px;
+  width: max-content;
+  transform: scale(0.8);
+}
+.counterButton {
+  transform: scale(0.8);
+}
+
+#itemIcon {
+  width: 60px;
+  height: 60px;
+}

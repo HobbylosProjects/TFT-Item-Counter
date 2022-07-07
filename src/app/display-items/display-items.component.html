@@ -1,0 +1,22 @@
+<div id="wrapper">
+  <ng-container *ngFor="let oneItem of items">
+    <app-display-item
+      [item]="oneItem"
+      (itemsAdd)="addItems($event)"
+      (itemsDelete)="deleteItems($event)"
+    ></app-display-item>
+  </ng-container>
+</div>
+
+<table id="table">
+  <tr>
+    <th>Item</th>
+    <th>Amount</th>
+  </tr>
+  <tr *ngFor="let data of tableObject">
+    <td><img src="{{ data.path }}" style="width: 30px; height: 30px" /></td>
+    <td>{{ data.amount }}</td>
+    <td><button (click)="addBasicItem(data.item)">+</button></td>
+    <td><button (click)="deleteBasicItem(data.item)">-</button></td>
+  </tr>
+</table>
